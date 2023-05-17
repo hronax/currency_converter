@@ -1,0 +1,15 @@
+AllCops:
+  TargetRubyVersion: 3.0
+  Exclude:
+    - 'spec/*'
+
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: single_quotes
+
+Style/StringLiteralsInInterpolation:
+  Enabled: false
+  EnforcedStyle: double_quotes
+
+Layout/LineLength:
+  Max: 120
