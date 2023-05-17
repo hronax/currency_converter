@@ -35,7 +35,7 @@ RSpec.describe CurrencyConverter do
       it 'raises an error with the specific error message' do
         expect do
           subject
-        end.to raise_error(WrongTypeError, 'Error converting currency. Error type: wrong-code. Please try again.')
+        end.to raise_error(CurrencyConverter::WrongTypeError, 'Error converting currency. Error type: wrong-code. Please try again.')
       end
     end
 
@@ -47,7 +47,7 @@ RSpec.describe CurrencyConverter do
       it 'raises an error with the specific error message' do
         expect do
           subject
-        end.to raise_error(ApiConnectionError, 'Problem with connection to an API. Timeout Error')
+        end.to raise_error(CurrencyConverter::ApiConnectionError, 'Problem with connection to an API. Timeout Error')
       end
     end
   end

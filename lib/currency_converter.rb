@@ -3,15 +3,16 @@
 require 'httparty'
 require 'json'
 
-class ApiConnectionError < StandardError
-end
-
-class WrongTypeError < StandardError
-end
-
 # CurrencyConverter class allow to convert currencies
 class CurrencyConverter
   include HTTParty
+
+  class ApiConnectionError < StandardError
+  end
+
+  class WrongTypeError < StandardError
+  end
+
   base_uri 'https://open.er-api.com/v6/latest'
 
   def self.convert(from_currency, amount, to_currency)

@@ -16,7 +16,7 @@ To use gem in your project:
 
 To try it as a separate program with CLI:
 
-`bin/currency_converter.rb FROM_CURRENCY AMOUNT TO_CURRENCY`
+`bin/currency_converter FROM_CURRENCY AMOUNT TO_CURRENCY`
 
 ## License
 

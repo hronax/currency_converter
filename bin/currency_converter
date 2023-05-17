@@ -13,7 +13,7 @@ else
   begin
     converted_amount = CurrencyConverter.convert(from_currency, amount, to_currency)
     puts "#{amount} #{from_currency} = #{converted_amount} #{to_currency}"
-  rescue ApiConnectionError, WrongTypeError => e
+  rescue CurrencyConverter::ApiConnectionError, CurrencyConverter::WrongTypeError => e
     puts e.message
   end
 end
